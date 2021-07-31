@@ -1,0 +1,14 @@
+<div class="row">
+    <button class="btn btn-primary" (click)="createNewRecipe()">New Recipe</button>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-12" *ngFor="let recipeEl of recipes; let i= index">
+        <app-recipe-item [recipe]="recipeEl"></app-recipe-item>
+    </div>    
+</div>
+
+
+
+
+<!-- [recipedetailsEvent]="populateRecipeDetails(recipeEl)" -->
